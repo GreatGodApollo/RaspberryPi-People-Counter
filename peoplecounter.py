@@ -5,7 +5,7 @@ GPIO.setmode(GPIO.BCM) # Sets GPIO mode
 GPIO.setup(7, GPIO.IN) # Sets pin 7 as an input
 try:
 	api = ApiClient("Your Api Key Here") # Account containing the variable
-	poeple = api.get_variable("Your variable here") # Variable for saving to
+	people = api.get_variable("Your variable here") # Variable for saving to
 	print("Connected to Ubidots") # Confirms connection
 except: 
 	print("Failed to connect to Ubidots, please check your key and internet.") # Gives error if it can't connect to ubidots
